@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "startup-ip-skills",
+  "description": "AI-agent skills that startup and SME development teams run on their own projects, by ABC IP LAW, a Korean patent and trademark firm.",
+  "owner": {
+    "name": "ABC IP LAW"
+  },
+  "plugins": [
+    {
+      "name": "abciplaw",
+      "displayName": "Patent Portfolio Discovery (특허 포트폴리오 발굴)",
+      "source": "./abciplaw",
+      "description": "For startups and SMEs building with AI agents: discover patent candidates from the codebase and business context, apply a preliminary patentability filter, design a core/application/new-business portfolio, and write per-invention disclosures (Korean output by default).",
+      "author": {
+        "name": "ABC IP LAW"
+      }
+    }
+  ]
+}
