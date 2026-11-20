@@ -8,9 +8,9 @@
   "plugins": [
     {
       "name": "abciplaw",
-      "displayName": "Patent Portfolio Discovery (특허 포트폴리오 발굴)",
+      "displayName": "ABC IP LAW Startup IP Skills (특허 포트폴리오 발굴 · 선행상표 검색)",
       "source": "./abciplaw",
-      "description": "For startups and SMEs building with AI agents: discover patent candidates from the codebase and business context, apply a preliminary patentability filter, design a core/application/new-business portfolio, and write per-invention disclosures (Korean output by default).",
+      "description": "For startups and SMEs: (1) discover patent candidates from the codebase and business context, apply a preliminary patentability filter, design a portfolio, and write per-invention disclosures; (2) before filing a trademark, check distinctiveness, plan a KIPRIS search the user runs themselves, and assess the prior marks they bring back (Korean output by default).",
       "author": {
         "name": "ABC IP LAW"
       }

@@ -48,4 +48,6 @@ jobs:
       - name: Versions agree
         run: |
           v=$(python3 -c 'import json;print(json.load(open("abciplaw/.claude-plugin/plugin.json"))["version"])')
-          grep -q "(단일 파일판, v$v)" abciplaw/PROMPT.md || { echo "PROMPT.md is not v$v"; exit 1; }
+          for f in abciplaw/PROMPT.md abciplaw/PROMPT-trademark-search.md; do
+            grep -q "(단일 파일판, v$v)" "$f" || { echo "$f is not v$v"; exit 1; }
+          done
