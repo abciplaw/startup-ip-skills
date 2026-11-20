@@ -13,7 +13,7 @@ This skill turns the portfolio method used by a Korean patent attorney with year
 3. **Filters for patentability**: eligible subject matter, prior disclosure risk, inventive step, enforceability, and patent vs. trade secret. Each candidate is rated *recommend filing / strengthen first / not recommended*, with ways to strengthen weaker ones.
 4. **Designs the portfolio**: places inventions in *core / application / new business & overseas* layers, finds gaps and proposes further candidates, and lays out stage-appropriate actions (early, growth, mature), filing order and budget priorities, a draft overseas plan, an IP mix (patents with trade secrets, designs, trademarks), and a **draft IP story for investors**.
 5. **Writes technical disclosures** for each invention worth filing, ready for an attorney to draft from.
-6. **Requests a review (optional)**: once you have checked the output, the agent can submit it to ABC IP LAW for you.
+6. **Prepares a review request (optional)**: once you have checked the output, the agent zips the folder for you to email. It never sends anything itself.
 
 See [examples/patent-portfolio/](../examples/patent-portfolio/) for a fictional sample (semiconductor wet-cleaning equipment software, in Korean).
 
@@ -35,14 +35,15 @@ Output is written in Korean by default, or in the language you use with the agen
 
 ## Requesting a review from ABC IP LAW
 
-After showing you the results, the agent asks whether you want a review: *summary only*, *full folder*, or *not now*. For now, it zips the output folder for you to check and email to abcip@abcip.co.kr. Once the website intake opens, the agent will be able to submit directly, but only after showing you exactly what will be sent, getting your privacy consent, and receiving your explicit "send". It never sends anywhere else.
+After showing you the results, the agent asks whether you want a review. If you do, it asks for the details to include (company, contact and so on) and zips the output folder. Check it and email it to abcip@abcip.co.kr yourself; you can start with the summary file only. The agent does not send mail, upload files or contact any server.
 
 ## Please note
 
 - **Do not publish the output.** Posting it to a public repository, this repo's issues, a blog or a shared AI chat link is a public disclosure and can cost you the patent. The output folder is git-ignored automatically.
 - **File before you launch, present or pitch.** Korea and the US allow a one-year grace period after your own disclosure; Europe and China are far stricter.
 - **Ratings and proposals are a preliminary opinion** from the agent, following an attorney's method but without a prior-art search. They are not an opinion on patentability. Decide what, where and when to file with a patent attorney.
-- The agent is instructed not to search the web, run prior-art or competitor searches, or upload anything. The only exception is the direct review submission described above, once enabled and only after your explicit approval. The output contains no source code dumps, secrets, internal hosts or personal data.
+- The agent is instructed not to search the web, run prior-art or competitor searches, upload anything or send mail, with no exceptions. The output contains no source code dumps, secrets, internal hosts or personal data.
+- **Worried about installing it?** Read [SECURITY.md](../SECURITY.md) first. The plugin contains no executable code (text files only), and you can verify that in about five minutes before installing. Using [PROMPT.md](PROMPT.md) without installing gives the same result.
 - Nothing here is legal advice.
 
 ## Who made this
