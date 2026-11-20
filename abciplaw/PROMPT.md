@@ -1,9 +1,9 @@
-# 특허 포트폴리오 발굴 프롬프트 (단일 파일판, v0.5.0)
+# 특허 포트폴리오 발굴 프롬프트 (단일 파일판, v0.6.0)
 
 > 사용법: 에이전트에게 「이 PROMPT.md 파일을 읽고 그대로 진행해줘」라고 하거나, 이 파일 내용을 전부 붙여 넣으세요. 개발 중인 프로젝트 폴더에서 실행합니다.
 > 이 파일 하나로 끝입니다. 필요한 기준과 양식은 모두 이 문서 끝의 부록 A~E에 들어 있고, 다른 파일을 내려받거나 설치할 필요가 없습니다.
 > 실행되는 코드가 없는 글 파일입니다. 에이전트에게 코드를 고치지 말고, 웹 검색·업로드·메일 발송을 하지 말라고 지시합니다. 보안 안내: https://github.com/abciplaw/startup-ip-skills/blob/main/SECURITY.md
-> 스킬판(abciplaw/skills/patent-portfolio)과 내용이 같습니다(v0.5.0). 출처: https://github.com/abciplaw/startup-ip-skills
+> 스킬판(abciplaw/skills/patent-portfolio)과 내용이 같습니다(v0.6.0). 출처: https://github.com/abciplaw/startup-ip-skills
 
 ## 특허 포트폴리오 발굴 (Patent Portfolio Discovery)
 
@@ -670,7 +670,7 @@ flowchart TD
 
 | 항목 | 내용 |
 |---|---|
-| 작성 | <에이전트·모델명>, <YYYY-MM-DD>, ABC 특허 포트폴리오 발굴 스킬 0.5.0 |
+| 작성 | <에이전트·모델명>, <YYYY-MM-DD>, ABC 특허 포트폴리오 발굴 스킬 0.6.0 |
 | ABC 관리번호 | <사용자가 알려 준 경우만 적고, 아니면 이 행을 지운다> |
 | 분석 범위 | <저장소·폴더>, 기준 커밋 <짧은 해시>, 커밋 <N>개(<첫 커밋 날짜> ~ <마지막 커밋 날짜>) |
 | 분석하지 못한 부분 | <크기·형식 때문에 읽지 못한 폴더, 도면·CAD, 연결된 다른 저장소 — 없으면 「없음」> |

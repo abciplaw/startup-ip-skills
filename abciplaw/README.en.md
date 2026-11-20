@@ -46,6 +46,18 @@ After showing you the results, the agent asks whether you want a review. If you 
 - **Worried about installing it?** Read [SECURITY.md](../SECURITY.md) first. The plugin contains no executable code (text files only), and you can verify that in about five minutes before installing. Using [PROMPT.md](PROMPT.md) without installing gives the same result.
 - Nothing here is legal advice.
 
+## Trademark Pre-filing Search skill
+
+The same plugin includes a second skill for anyone preparing a Korean trademark application, written in plain language for non-specialists. Ask the agent to "run a prior trademark search" (`/abciplaw:trademark-search` in Claude Code, `$trademark-search` in Codex, or have any agent or chat app read [PROMPT-trademark-search.md](PROMPT-trademark-search.md)). It
+
+1. asks about the mark and the business in one round;
+2. checks distinctiveness first (descriptive, generic or common terms that fail even with no prior marks);
+3. builds a search plan: goods and services, Nice classes, how to look up Korean similar-group codes, 10–25 phonetic, spelling and meaning variants, and step-by-step KIPRIS instructions;
+4. assesses the results **you** bring back from KIPRIS, rating each prior mark (high / caution / low) on similarity of goods and of the marks (appearance, sound, meaning), with ways around each conflict;
+5. optionally zips the output for you to email to ABC IP LAW.
+
+The agent does not search the web itself: an unfiled mark is unprotected and could be pre-empted if it leaks, and web-scraped results are hard to verify. It never invents prior marks. All conclusions are preliminary opinions, not a view on registrability.
+
 ## Who made this
 
 ABC IP LAW (ABC특허법률사무소) · https://abcip.co.kr · abcip@abcip.co.kr
