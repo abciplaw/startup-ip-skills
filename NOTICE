@@ -4,7 +4,8 @@ https://github.com/abciplaw/startup-ip-skills
 https://abcip.co.kr
 
 This repository includes the "ABC IP LAW Patent Portfolio Discovery Skill"
-(ABC특허법률사무소 특허 포트폴리오 발굴 스킬, plugin "abciplaw"),
+(ABC특허법률사무소 특허 포트폴리오 발굴 스킬) and the "ABC IP LAW Trademark
+Pre-filing Search Skill" (ABC특허법률사무소 선행상표 검색 스킬), plugin "abciplaw",
 written by patent attorneys at ABC IP LAW.
 
 Licensed under the Apache License, Version 2.0 (see LICENSE).
