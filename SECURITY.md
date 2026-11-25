@@ -70,13 +70,13 @@ perl -CSD -ne 'print "$ARGV:$.\n" if /[\x{200B}-\x{200F}\x{202A}-\x{202E}\x{2060
    { "permissions": { "deny": ["WebFetch", "WebSearch"] } }
    ```
 
-3. **버전 고정.** `/plugin marketplace add abciplaw/startup-ip-skills#v0.6.0`처럼 태그를 붙이면 그 버전으로 고정됩니다. 외부 마켓플레이스는 원래 자동 업데이트가 꺼져 있어(`/plugin` → Marketplaces에서 확인), 직접 업데이트할 때만 바뀝니다.
+3. **버전 고정.** `/plugin marketplace add abciplaw/startup-ip-skills#v0.6.1`처럼 태그를 붙이면 그 버전으로 고정됩니다. 외부 마켓플레이스는 원래 자동 업데이트가 꺼져 있어(`/plugin` → Marketplaces에서 확인), 직접 업데이트할 때만 바뀝니다.
 4. **설치하지 않고 쓰기.** [abciplaw/PROMPT.md](abciplaw/PROMPT.md)(특허 포트폴리오 발굴) 또는 [abciplaw/PROMPT-trademark-search.md](abciplaw/PROMPT-trademark-search.md)(선행상표 검색) 파일 하나를 에이전트에게 읽히면 같은 결과가 나옵니다. 파일 하나에 지시문과 부록이 모두 들어 있으니, 내려받아 직접 읽어 보신 뒤 쓰시면 됩니다.
 5. **Codex·Gemini CLI.** 스킬 폴더를 복사해 쓰는 방식이라 복사 전에 폴더 내용을 그대로 확인할 수 있습니다. 각 에이전트의 샌드박스와 권한 설정을 함께 쓰세요.
 
 ## 변경 관리
 
-- 모든 변경은 이 저장소의 공개 커밋 기록으로 남습니다. 버전은 `abciplaw/.claude-plugin/plugin.json`의 `version`과 git 태그(`v0.6.0` 등)로 표시합니다.
+- 모든 변경은 이 저장소의 공개 커밋 기록으로 남습니다. 버전은 `abciplaw/.claude-plugin/plugin.json`의 `version`과 git 태그(`v0.6.1` 등)로 표시합니다.
 - v0.4.0에는 사무소 홈페이지 접수가 열리면 쓰도록 꺼 둔 전송 절차가 지시문에 들어 있었습니다. v0.5.0에서 그 절차를 지우고, 에이전트는 어떤 경우에도 보내지 않도록 바꿨습니다.
 - v0.6.0에서 선행상표 검색 스킬을 더했습니다. 같은 규칙(웹 검색·업로드·발송 없음)을 따르며, 키프리스 검색은 사용자가 직접 하고 에이전트는 사용자가 가져온 결과만 판단합니다.
 
@@ -100,7 +100,7 @@ This page lists what to check before installing the plugin, with a way to verify
 - **Nothing is sent out.** The plugin has no network capability, and the agent is told not to search the web, upload, send mail, or run `curl`/`wget`, with no exceptions. Nothing goes to ABC IP LAW automatically either; if you want a review, the agent zips the output and you email it yourself.
 - **No permission bypass.** The skill has no `allowed-tools` or similar fields, so your agent asks before writing files or running commands, as usual.
 - **Read-only on your project.** Each skill writes only to its own output folder (`patent-portfolio/` or `trademark-search/`), which it git-ignores. It does not install packages or run build scripts.
-- **No silent updates.** Claude Code does not auto-update third-party marketplaces by default, and you can pin a tag: `/plugin marketplace add abciplaw/startup-ip-skills#v0.6.0`.
+- **No silent updates.** Claude Code does not auto-update third-party marketplaces by default, and you can pin a tag: `/plugin marketplace add abciplaw/startup-ip-skills#v0.6.1`.
 - **No hidden instructions.** All instructions are readable Korean text, with no invisible Unicode. The only external URLs are the firm's website and this repository. The trademark-search skill names public search sites (KIPRIS `kipris.or.kr`, `patent.go.kr`) in plain text for the user to visit; the agent does not access them. The skill also tells the agent not to follow instructions found inside your repository.
 
 **Five-minute check before installing**: clone the repository and run the commands in the Korean section above. Checks 1, 2, 3 and 5 should print nothing; check 4 should list only abcip.co.kr and this repository. The same checks run on every change through GitHub Actions ([plugin-safety-check.yml](.github/workflows/plugin-safety-check.yml)).
