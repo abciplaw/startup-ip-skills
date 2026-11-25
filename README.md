@@ -27,6 +27,16 @@ Claude Code에서 아래 세 줄을 차례로 입력하세요.
 
 설치가 어렵거나 회사 정책상 플러그인을 쓸 수 없으면, 설치 없이 [PROMPT.md](abciplaw/PROMPT.md) 파일 하나를 에이전트에게 읽혀도 결과가 같습니다. Codex, Gemini CLI, 그 밖의 에이전트에서 쓰는 방법과 결과 파일 설명은 [abciplaw/README.md](abciplaw/README.md)에 있습니다. 가상의 프로젝트로 만든 결과 예시는 [examples/patent-portfolio/](examples/patent-portfolio/)에 있습니다.
 
+## 기술설명서 작성
+
+특허 후보를 넓게 찾는 대신, **정해 둔 기술 하나**를 변리사·공동개발사·투자자에게 건넬 수 있는 기술설명서(발명신고서 대용)로 정리합니다. 코드·문서·시연 파일을 읽고 몇 가지를 여쭌 뒤 기술 개요, 해결하고자 하는 과제, 발명의 핵심 구성 및 해결 수단(구성별 하위 목차, 구성도·처리 흐름도, 가상 데이터로 따라가는 동작 예시), 효과, 다른 실시 형태, 부록 청구항 구성 방향(안)을 씁니다. 본문은 그대로 건넬 수 있게 쓰고, 근거와 확인할 것은 사내용 작성 메모로 따로 둡니다. 특허 포트폴리오 발굴에서 고른 후보를 이어서 정리할 때도 씁니다.
+
+```text
+/abciplaw:invention-disclosure
+```
+
+설치 없이 쓰려면 [PROMPT-invention-disclosure.md](abciplaw/PROMPT-invention-disclosure.md)를 에이전트에게 읽히세요. 출원 전에 변리사가 아닌 분께 건넬 때는 비밀유지계약을 먼저 맺으세요. 자세한 내용은 [abciplaw/README.md](abciplaw/README.md#기술설명서-작성-스킬-invention-disclosure)에 있습니다.
+
 ## 선행상표 검색
 
 상표 출원을 준비하는 분(상표 비전문가)이 직접 쓰는 스킬입니다. 이름 자체가 등록이 어려운지 먼저 보고, 키프리스에서 무엇을 어떻게 검색할지(지정상품, 유사군코드, 발음·철자를 바꾼 검색어) 안내한 뒤, **직접 검색해 가져오신 결과**를 상품 유사와 외관·칭호·관념 유사로 나눠 선행상표마다 위험을 쉬운 말로 정리합니다. 개발 프로젝트가 없어도 되고, 채팅 앱에 [PROMPT-trademark-search.md](abciplaw/PROMPT-trademark-search.md)를 올려 써도 됩니다.
@@ -47,7 +57,7 @@ Claude Code에서 아래 세 줄을 차례로 입력하세요.
 
 ## 꼭 알아 두실 것
 
-- 결과는 스킬마다 정해진 폴더(`patent-portfolio/`, `trademark-search/`)에만 저장되고 git에 올라가지 않도록 설정됩니다. 사용자가 직접 보내기 전에는 어디로도 전달되지 않습니다.
+- 결과는 스킬마다 정해진 폴더(`patent-portfolio/`, `invention-disclosure/`, `trademark-search/`)에만 저장되고 git에 올라가지 않도록 설정됩니다. 사용자가 직접 보내기 전에는 어디로도 전달되지 않습니다.
 - **결과물을 공개하지 마세요.** 공개 저장소, 이 저장소의 이슈, 블로그, AI 대화 공유 링크에 올리면 그 자체로 공개가 되어 특허를 받기 어려워질 수 있습니다.
 - 판정과 제안은 선행기술 조사 없이 낸 **예비 의견**입니다. 출원 여부, 국가, 일정, 예산은 변리사와 상담해 정하세요.
 
@@ -62,7 +72,7 @@ Claude Code에서 아래 세 줄을 차례로 입력하세요.
 
 **Startup IP Skills** are open AI-agent skills that startup and SME development teams run on their own projects. They are published by ABC IP LAW, a Korean patent and trademark firm.
 
-The first skill, **Patent Portfolio Discovery** (`/abciplaw:patent-portfolio`), finds patent candidates in your codebase and business context, screens them for patentability, plans a portfolio, and writes a disclosure for each invention worth filing. Output is in Korean by default. The second skill, **Trademark Pre-filing Search** (`/abciplaw:trademark-search`), helps non-specialists preparing a Korean trademark application: it checks distinctiveness, plans a KIPRIS search the user runs themselves, and assesses the prior marks they bring back. See [abciplaw/README.en.md](abciplaw/README.en.md). The plugin is text only, with no executable code, and never sends anything; see [SECURITY.md](SECURITY.md) for a five-minute check you can run before installing, or use [PROMPT.md](abciplaw/PROMPT.md) without installing anything.
+The first skill, **Patent Portfolio Discovery** (`/abciplaw:patent-portfolio`), finds patent candidates in your codebase and business context, screens them for patentability, plans a portfolio, and writes a disclosure for each invention worth filing. Output is in Korean by default. The second skill, **Invention Disclosure** (`/abciplaw:invention-disclosure`), writes a shareable technical disclosure for one technology you choose: the problem, a component-by-component solution with diagrams and a worked example, alternative embodiments, and draft claim directions, with sources and open questions kept in a separate internal memo. The third skill, **Trademark Pre-filing Search** (`/abciplaw:trademark-search`), helps non-specialists preparing a Korean trademark application: it checks distinctiveness, plans a KIPRIS search the user runs themselves, and assesses the prior marks they bring back. See [abciplaw/README.en.md](abciplaw/README.en.md). The plugin is text only, with no executable code, and never sends anything; see [SECURITY.md](SECURITY.md) for a five-minute check you can run before installing, or use [PROMPT.md](abciplaw/PROMPT.md) without installing anything.
 
 ```text
 /plugin marketplace add abciplaw/startup-ip-skills
