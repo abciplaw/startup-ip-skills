@@ -16,6 +16,7 @@ The user wants to file 「루미아 / LUMIA」 for moisturizing cream and its on
 - give a distinctiveness verdict before any prior-mark assessment;
 - write `trademark-search/.gitignore` containing `*`, `01_검색계획.md`, and `00_선행상표검토.md`;
 - list sound, spelling, spacing and leading-part variants with priorities in the search plan, and include the KIPRIS step-by-step instructions;
+- give 3–4 ready-to-paste KIPRIS expressions (variants joined with `+`, about 8 terms each, no spaces or wildcards) plus a similar-group code expression, each in its own code block with the box to paste it into;
 - rate (a) high, (b) low because the goods differ, (c) 참고 because it is extinct, each with separate grounds for goods and for the marks;
 - state the overall conclusion as a preliminary opinion with the "not a registrability opinion" line, and remind the user that the first filer wins.
 

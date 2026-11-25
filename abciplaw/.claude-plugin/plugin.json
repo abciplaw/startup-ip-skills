@@ -1,6 +1,6 @@
 {
   "name": "abciplaw",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "ABC특허법률사무소(ABC IP LAW)가 공개한 특허·상표 스킬. patent-portfolio: 개발 중인 프로젝트와 사업 정보로 특허 포트폴리오를 발굴합니다(특허성 필터, 포트폴리오 설계, 출원 순서·해외 가안·IR 설명, 발명별 기술설명서). trademark-search: 상표 출원 전에 식별력을 점검하고, 키프리스 검색 계획을 만들어 사용자가 직접 검색한 선행상표의 유사 여부와 위험을 쉬운 말로 정리합니다.",
   "author": { "name": "ABC IP LAW (ABC특허법률사무소)" },
   "homepage": "https://github.com/abciplaw/startup-ip-skills",
