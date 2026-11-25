@@ -46,6 +46,18 @@ After showing you the results, the agent asks whether you want a review. If you 
 - **Worried about installing it?** Read [SECURITY.md](../SECURITY.md) first. The plugin contains no executable code (text files only), and you can verify that in about five minutes before installing. Using [PROMPT.md](PROMPT.md) without installing gives the same result.
 - Nothing here is legal advice.
 
+## Invention Disclosure skill
+
+Use this when you want **one technology** written up, without running the whole portfolio. It produces a technical disclosure you can hand to a patent attorney, or (under an NDA) to a partner, customer or investor. Ask the agent to "write a technical disclosure for this feature" (`/abciplaw:invention-disclosure` in Claude Code, `$invention-disclosure` in Codex, or have any agent read [PROMPT-invention-disclosure.md](PROMPT-invention-disclosure.md)). It
+
+1. settles what to write about: a feature, folder, commit, document or demo file, or an invention file from a patent portfolio run;
+2. reads the material and asks up to eight questions in one round (who will receive it, the prior approach and its limits, abandoned attempts, essential components, alternative implementations, measurements, disclosure status);
+3. writes the disclosure: overview, the problem to solve, the core components and solution (a sub-section per component, diagrams, and a worked example with invented data), effects, alternative embodiments, and appendices with draft claim directions, drawing candidates and disclosure status;
+4. keeps sources, internal names, open questions and anything withheld as a trade secret in a separate internal memo, so the disclosure itself can be shared as is;
+5. optionally zips the output for you to email to ABC IP LAW.
+
+It does not judge patentability; use the portfolio skill or an attorney for that. Before filing, share the disclosure with anyone other than your patent attorney only under an NDA.
+
 ## Trademark Pre-filing Search skill
 
 The same plugin includes a second skill for anyone preparing a Korean trademark application, written in plain language for non-specialists. Ask the agent to "run a prior trademark search" (`/abciplaw:trademark-search` in Claude Code, `$trademark-search` in Codex, or have any agent or chat app read [PROMPT-trademark-search.md](PROMPT-trademark-search.md)). It

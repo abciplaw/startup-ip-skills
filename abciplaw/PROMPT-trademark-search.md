@@ -1,9 +1,9 @@
-# 선행상표 검색 프롬프트 (단일 파일판, v0.6.0)
+# 선행상표 검색 프롬프트 (단일 파일판, v0.7.0)
 
 > 사용법: 에이전트에게 「이 PROMPT-trademark-search.md 파일을 읽고 그대로 진행해줘」라고 하거나, 이 파일 내용을 전부 붙여 넣으세요. 어느 폴더에서 실행해도 됩니다. 파일을 올릴 수 있는 채팅 앱에 올려 써도 됩니다(그때는 결과를 대화로 보여 드립니다).
 > 이 파일 하나로 끝입니다. 필요한 기준과 양식은 모두 이 문서 끝의 부록 A~D에 들어 있고, 다른 파일을 내려받거나 설치할 필요가 없습니다.
 > 실행되는 코드가 없는 글 파일입니다. 에이전트에게 웹 검색·업로드·메일 발송을 하지 말라고 지시합니다. 키프리스 검색은 사용자가 직접 합니다. 보안 안내: https://github.com/abciplaw/startup-ip-skills/blob/main/SECURITY.md
-> 스킬판(abciplaw/skills/trademark-search)과 내용이 같습니다(v0.6.0). 출처: https://github.com/abciplaw/startup-ip-skills
+> 스킬판(abciplaw/skills/trademark-search)과 내용이 같습니다(v0.7.0). 출처: https://github.com/abciplaw/startup-ip-skills
 
 ## 선행상표 검색 (Trademark Pre-filing Search)
 
@@ -372,7 +372,7 @@ trademark-search/
 
 | 항목 | 내용 |
 |---|---|
-| 작성 | <에이전트·모델명>, <YYYY-MM-DD>, ABC 선행상표 검색 스킬 0.6.0 |
+| 작성 | <에이전트·모델명>, <YYYY-MM-DD>, ABC 선행상표 검색 스킬 0.7.0 |
 | ABC 관리번호 | <사용자가 알려 준 경우만 적고, 아니면 이 행을 지운다> |
 | 검색한 날 | <사용자가 키프리스를 검색한 날> |
 | 검색한 사람 | 사용자 직접(키프리스). 에이전트는 검색하지 않고 가져온 결과만 판단함 |
